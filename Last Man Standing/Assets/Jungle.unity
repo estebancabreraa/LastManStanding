@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 377453216}
   - component: {fileID: 377453215}
   - component: {fileID: 377453217}
+  - component: {fileID: 377453218}
   m_Layer: 0
   m_Name: soldier_tilesheet_0
   m_TagString: Untagged
@@ -470,6 +471,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &377453218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 377453212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a958fd27c974006a51653919845bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1771585843}
 --- !u!1 &562679240
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1eb719f9e5f40d7b6317cfc672c139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personaje: {fileID: 0}
+  personaje: {fileID: 377453212}
   startingPoint: 20
 --- !u!4 &940321668
 Transform:
@@ -1006,7 +1019,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013554845}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1306,7 +1319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1eb719f9e5f40d7b6317cfc672c139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personaje: {fileID: 0}
+  personaje: {fileID: 377453212}
   startingPoint: 0
 --- !u!4 &1671685328
 Transform:
