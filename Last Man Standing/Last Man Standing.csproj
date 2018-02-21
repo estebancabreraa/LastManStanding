@@ -286,14 +286,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Alien.cs" />
+    <Compile Include="Assets\Scripts\ataqueTorre.cs" />
+    <Compile Include="Assets\Scripts\disparar.cs" />
     <Compile Include="Assets\Scripts\EnemyRobot.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\LaserScript.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
     <Compile Include="Assets\Scripts\ScrollingBackground.cs" />
+    <Compile Include="Assets\Scripts\ScrollingJungle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sprites\CliffWorld\tileset.png.txt" />
+    <None Include="Assets\Sprites\Jungle\jungle tileset\jungle tileset.png.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
