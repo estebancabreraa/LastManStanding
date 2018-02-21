@@ -13,6 +13,7 @@ public class Alien : MonoBehaviour {
     private float speed = 5f;
     private float jumpForce = 250f;
     private bool facingRight = true;
+	public static bool onLadder = false;
 
 	// Use this for initialization
 	void Start () {
@@ -36,13 +37,23 @@ public class Alien : MonoBehaviour {
 
         if (Input.GetButtonDown("Jump")) {
             rb2d.AddForce(Vector2.up*jumpForce);
-			audio.Play ();
+			//audio.Play ();
         }
 		anim.SetFloat ("Speed", Mathf.Abs (move));
 	}
     private void OnTriggerEnter2D (Collider2D collision)
 	{
-		GameController.instance.gameOver = true;
+		//GameController.instance.gameOver = true;
+		if (collision.name == "Ladder") {
+			onLadder = true;
+		}
 
+	}
+	private void OnTriggerExit2D(Collider2D collider)
+	{
+		if (collider.name == "Ladder") {
+			onLadder = false;
+			anim.SetBool ("isClimbing", false);
+		}
 	}
 }
