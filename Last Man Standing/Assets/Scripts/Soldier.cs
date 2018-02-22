@@ -56,7 +56,6 @@ public class Soldier : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "Points") {
 			GameController.instance.score += 5;
-			collision.gameObject.gameObject.
 			Destroy (collision.gameObject);
 		}
 	}
@@ -65,6 +64,7 @@ public class Soldier : MonoBehaviour {
 	{
 		if (collision.tag == "Deadly") {
 			livesLeft--;
+			Destroy (collision.gameObject);
 		} 
 
 	}
