@@ -23,8 +23,8 @@ public class SceneChanger : MonoBehaviour {
 	void Update () {
 		
 	}
-	public void OnStartGame()
+	public void OnStartGame(string scene)
 	{
-		SceneManager.LoadScene ("Game"); //cambio de escenas
+		SceneManager.LoadScene (scene); //cambio de escenas
 	}
 }
