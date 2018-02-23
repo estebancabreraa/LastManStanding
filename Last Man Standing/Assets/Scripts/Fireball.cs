@@ -24,13 +24,6 @@ public class Fireball : MonoBehaviour {
 			if (direction == "negative") {
 				transform.Translate (Vector2.left * fireSpeed * Time.deltaTime);	
 			}
-			if (transform.position.x > 10.64) {
-				transform.position = (new Vector3 (-11f, transform.position.y, transform.position.z));
-			} 
-
-			else if (transform.position.x < -11) {
-				transform.position = (new Vector3 (10.60f, transform.position.y, transform.position.z));
-			}
 			Destroy (gameObject, 3f);
 		}
 	}

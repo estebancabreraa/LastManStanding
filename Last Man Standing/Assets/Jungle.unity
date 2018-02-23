@@ -2278,10 +2278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269dd6bd43c434fdd83570c42f58d4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 3
+  spawnTime: 10
   elapsedTime: 0
   instances: 0
-  coin: {fileID: 1964383709651452, guid: 710ac27d4ba6d4482b103687af5918b6, type: 2}
+  coin: {fileID: 1173029252213588, guid: bda84fbdecc944c54b69ae44833597b7, type: 2}
 --- !u!1 &1245856421
 GameObject:
   m_ObjectHideFlags: 0
